@@ -1,0 +1,2045 @@
+<!doctype html>
+<html lang="km">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aura Cove Resort & Sanctuary | 100% Standalone Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..800;1,400..800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Kantumruy+Pro:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="/_aistudio-iframe.js?v=2c34bde1"></script>
+  </head>
+  <body>
+    <!-- 1. Top Privilege Banner -->
+    <div class="top-banner">
+      <div class="container">
+        <div>
+          <span id="txt-banner-promo"
+            >✨ ទទួលបានរថយន្ត VIP មកទទួល និងសំបុត្រស្ប៉ាប្រចាំថ្ងៃដោយឥតគិតថ្លៃ
+            សម្រាប់ការស្នាក់នៅ ៤យប់ឡើងទៅជាមួយកូដ</span
+          >
+          <span class="top-banner-highlight">SUNSET15</span>
+        </div>
+        <div>
+          <span id="txt-banner-contact"
+            >ផ្នែកបំរើអតិថិជន៖ +1 (800) 492-AURA · ឆ្នេរម៉ាលីប៊ូរីហ្វ (Malibu
+            Reef)</span
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. Header & Navigation -->
+    <header class="navbar">
+      <div class="container">
+        <div class="brand">
+          <span class="brand-title">AURA COVE</span>
+          <span class="brand-sub" id="txt-brand-sub"
+            >រីសត និងជម្រកសម្រាកលំហែកាយមាត់សមុទ្រ</span
+          >
+        </div>
+
+        <input type="checkbox" id="nav-toggle" class="nav-toggle-input" />
+        <label
+          for="nav-toggle"
+          class="nav-toggle-btn"
+          aria-label="Toggle navigation"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <nav class="nav-menu">
+          <ul class="nav-links">
+            <li>
+              <a
+                href="#accommodations"
+                class="nav-link"
+                id="nav-item-accommodations"
+                >បន្ទប់ និងវីឡា</a
+              >
+            </li>
+            <li>
+              <a href="#booking" class="nav-link" id="nav-item-booking"
+                >ប្រតិទិនកក់បន្ទប់</a
+              >
+            </li>
+            <li>
+              <a href="#experiences" class="nav-link" id="nav-item-experiences"
+                >បទពិសោធន៍កម្សាន្ត</a
+              >
+            </li>
+            <li>
+              <a href="#dining" class="nav-link" id="nav-item-dining"
+                >ភោជនីយដ្ឋាន</a
+              >
+            </li>
+            <li>
+              <a href="#grounds" class="nav-link" id="nav-item-grounds"
+                >ប្លង់រមណីយដ្ឋាន</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <!-- Language Switcher -->
+          <select
+            id="lang-select"
+            class="control-select"
+            onchange="switchLanguage(this.value)"
+            title="Change language"
+          >
+            <option value="km" selected>🇰🇭 ខ្មែរ (KM)</option>
+            <option value="en">🇬🇧 English (EN)</option>
+          </select>
+
+          <!-- Currency Switcher -->
+          <select
+            id="currency-select"
+            class="control-select"
+            onchange="switchCurrency(this.value)"
+            title="Change currency"
+          >
+            <option value="USD" selected>USD ($)</option>
+            <option value="KHR">KHR (៛)</option>
+            <option value="EUR">EUR (€)</option>
+            <option value="GBP">GBP (£)</option>
+            <option value="JPY">JPY (¥)</option>
+          </select>
+
+          <!-- My Bookings Button -->
+          <button
+            onclick="openMyBookingsModal()"
+            class="btn btn-outline btn-sm"
+          >
+            <span>📅</span>
+            <span id="txt-my-bookings-btn">ការកក់របស់ខ្ញុំ</span>
+            <span id="booking-badge" class="badge-count">0</span>
+          </button>
+
+          <!-- Book Now CTA -->
+          <button
+            onclick="openBookingModal('azure-overwater')"
+            class="btn btn-primary btn-sm"
+          >
+            <span id="txt-book-now-nav">កក់បន្ទប់ឥឡូវនេះ</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- 3. HERO BENTO GRID SECTION (CSS GRID) -->
+      <section class="section-py" style="padding-top: 32px">
+        <div class="container">
+          <div class="hero-grid">
+            <!-- Bento Col 1: Main Ocean Sanctuary Banner (Span 8) -->
+            <article class="bento-card bento-featured">
+              <div>
+                <span class="badge-sub" style="color: #e8c872" id="hero-badge"
+                  >ឆ្នេរម៉ាលីប៊ូរីហ្វ · ជម្រកធម្មជាតិឯកជន</span
+                >
+                <h1 id="hero-title">
+                  កន្លែងដែលភាពស្ងប់ស្ងាត់នៃឆ្នេរសមុទ្រ
+                  ជួបជាមួយស្ថាបត្យកម្មដ៏ប្រណិត
+                </h1>
+                <p id="hero-desc">
+                  សម្រាកលំហែកាយនៅចន្លោះទឹករលកថ្លាដូចត្បូងកណ្តៀង
+                  និងច្រាំងថ្មធម្មជាតិ។ រីករាយជាមួយវីឡាប្រណិតលើទឹកទាំង ១៤ ខ្នង
+                  ការព្យាបាលបែបវារីអគ្គីសនី និងអាហារសមុទ្រលំដាប់ពិភពលោក។
+                </p>
+              </div>
+
+              <div
+                style="
+                  display: flex;
+                  gap: 14px;
+                  align-items: center;
+                  margin-top: 24px;
+                  flex-wrap: wrap;
+                "
+              >
+                <a href="#booking" class="btn btn-accent" id="hero-cta-check"
+                  >ពិនិត្យកាលបរិច្ឆេទទំនេរ</a
+                >
+                <a
+                  href="#accommodations"
+                  class="btn btn-outline"
+                  style="color: #ffffff; border-color: rgba(255, 255, 255, 0.4)"
+                  id="hero-cta-villas"
+                  >ទស្សនាវីឡាទាំងអស់</a
+                >
+              </div>
+            </article>
+
+            <!-- Bento Col 2: Featured Suite Spotlight (Span 4) -->
+            <article class="bento-card bento-side-suite">
+              <img
+                class="bento-side-img"
+                src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80"
+                alt="Azure Overwater Sanctuary Villa"
+              />
+              <div class="bento-side-content">
+                <div>
+                  <span class="badge-sub" id="featured-suite-badge"
+                    >វីឡាពេញនិយមបំផុត</span
+                  >
+                  <h3 style="font-size: 20px; margin-bottom: 6px">
+                    Azure Overwater Sanctuary
+                  </h3>
+                  <p
+                    style="font-size: 13px; color: var(--color-text-muted)"
+                    id="featured-suite-desc"
+                  >
+                    វីឡាលើផ្ទៃទឹកសមុទ្រ ជាមួយអាងហែលទឹក Infinity ផ្ទាល់ខ្លួន
+                    និងកម្រាលកញ្ចក់ថ្លាមើលផ្កាថ្ម។
+                  </p>
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: baseline;
+                    margin-top: 16px;
+                    border-top: 1px solid var(--color-border);
+                    padding-top: 12px;
+                  "
+                >
+                  <span
+                    style="
+                      font-size: 22px;
+                      font-weight: 700;
+                      color: var(--color-accent);
+                      font-family: var(--font-serif);
+                    "
+                    ><span class="price-val" data-usd="1450">$1,450</span>
+                    <span
+                      style="
+                        font-size: 12px;
+                        color: var(--color-text-muted);
+                        font-family: var(--font-sans);
+                      "
+                      >/ យប់</span
+                    ></span
+                  >
+                  <button
+                    onclick="openBookingModal('azure-overwater')"
+                    class="btn btn-primary"
+                    style="padding: 8px 16px; font-size: 12px"
+                  >
+                    ជ្រើសរើស
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Bento Stat 1 (Span 4) -->
+            <div class="bento-card bento-stat-card">
+              <span class="bento-stat-number">4.98 / 5.0</span>
+              <span class="bento-stat-label"
+                >ការវាយតម្លៃខ្ពស់បំផុតពីភ្ញៀវជាតិ និងអន្តរជាតិ</span
+              >
+              <span class="bento-stat-sub"
+                >ទទួលស្គាល់ដោយ Condé Nast Traveler Gold List 2026</span
+              >
+            </div>
+
+            <!-- Bento Stat 2 (Span 4) -->
+            <div class="bento-card bento-stat-card">
+              <span class="bento-stat-number">100% សូឡា</span>
+              <span class="bento-stat-label"
+                >រមណីយដ្ឋានថាមពលបៃតងស្អាត ១០០%</span
+              >
+              <span class="bento-stat-sub"
+                >ដៃគូអភិរក្សជីវមណ្ឌលផ្កាថ្មការពារដោយ UNESCO</span
+              >
+            </div>
+
+            <!-- Bento Stat 3 (Span 4) -->
+            <div class="bento-card bento-stat-card">
+              <span class="bento-stat-number">២៤ ម៉ោង</span>
+              <span class="bento-stat-label"
+                >អ្នកបម្រើផ្ទាល់ខ្លួន និងសេវាកម្ម Butler</span
+              >
+              <span class="bento-stat-sub"
+                >ឡានអគ្គិសនីដឹកជញ្ជូន និងការរៀបចំអាហារឯកជន</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. ACCOMMODATIONS SHOWCASE (3-COLUMN CSS GRID) -->
+      <section id="accommodations" class="section-py">
+        <div class="container">
+          <div class="section-header">
+            <span class="badge-sub" id="accomm-sub"
+              >ជម្រើសវីឡា និងបន្ទប់ស្នាក់នៅ</span
+            >
+            <h2 class="section-title" id="accomm-title">
+              វីឡាប្រណិតកណ្តាលធម្មជាតិ
+            </h2>
+            <p class="section-desc" id="accomm-desc">
+              ស្ថាបត្យកម្មទំនើបបែបបង្រួម
+              ដែលសម្របខ្លួនយ៉ាងល្អឥតខ្ចោះជាមួយសម្រស់ព្រៃភ្នំ
+              និងផ្ទៃសមុទ្រខៀវស្រងាត់។
+            </p>
+          </div>
+
+          <div class="accommodations-grid">
+            <!-- Suite 1 -->
+            <article class="suite-card">
+              <div class="suite-img-wrap">
+                <img
+                  class="suite-img"
+                  src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80"
+                  alt="Azure Overwater Sanctuary Villa"
+                />
+                <span class="suite-badge">ពេញនិយមបំផុត</span>
+              </div>
+              <div class="suite-content">
+                <div>
+                  <h3 class="suite-title">Azure Overwater Sanctuary</h3>
+                  <p class="suite-desc">
+                    វីឡាលើផ្ទៃទឹកសមុទ្រ ជាមួយអាងហែលទឹក Infinity ផ្ទាល់ខ្លួន
+                    កម្រាលកញ្ចក់ថ្លាមើលផ្កាថ្ម និងសេវាបម្រើការ ២៤ ម៉ោង។
+                  </p>
+                </div>
+
+                <div class="suite-specs-grid">
+                  <div>
+                    <span class="suite-spec-label">ទំហំ</span>
+                    <span class="suite-spec-val">1,850 ហ្វីត²</span>
+                  </div>
+                  <div>
+                    <span class="suite-spec-label">ចំនួនភ្ញៀវ</span>
+                    <span class="suite-spec-val">3 នាក់</span>
+                  </div>
+                  <div>
+                    <span class="suite-spec-label">គ្រែ</span>
+                    <span class="suite-spec-val">King Bed</span>
+                  </div>
+                </div>
+
+                <div class="suite-footer">
+                  <div class="suite-price">
+                    <span class="price-val" data-usd="1450">$1,450</span>
+                    <span>/ យប់</span>
+                  </div>
+                  <div style="display: flex; gap: 8px">
+                    <button
+                      onclick="openRoomDetailModal('azure-overwater')"
+                      class="btn btn-outline btn-sm"
+                    >
+                      លម្អិត
+                    </button>
+                    <button
+                      onclick="openBookingModal('azure-overwater')"
+                      class="btn btn-primary btn-sm"
+                    >
+                      កក់បន្ទប់
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Suite 2 -->
+            <article class="suite-card">
+              <div class="suite-img-wrap">
+                <img
+                  class="suite-img"
+                  src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+                  alt="Cliffside Horizon Penthouse"
+                />
+                <span class="suite-badge">ទេសភាពថ្ងៃលិច</span>
+              </div>
+              <div class="suite-content">
+                <div>
+                  <h3 class="suite-title">Cliffside Horizon Penthouse</h3>
+                  <p class="suite-desc">
+                    ស្ថិតនៅលើកំពូលច្រាំងថ្មខ្ពស់
+                    ផ្តល់នូវទេសភាពមហាសមុទ្រប៉ាស៊ីហ្វិក ១៨០ ដឺក្រេ
+                    អាងទឹកក្ដៅក្រៅផ្ទះ និងឡានផ្ទេរឯកជន។
+                  </p>
+                </div>
+
+                <div class="suite-specs-grid">
+                  <div>
+                    <span class="suite-spec-label">ទំហំ</span>
+                    <span class="suite-spec-val">2,200 ហ្វីត²</span>
+                  </div>
+                  <div>
+                    <span class="suite-spec-label">ចំនួនភ្ញៀវ</span>
+                    <span class="suite-spec-val">2 នាក់</span>
+                  </div>
+                  <div>
+                    <span class="suite-spec-label">គ្រែ</span>
+                    <span class="suite-spec-val">Grand King</span>
+                  </div>
+                </div>
+
+                <div class="suite-footer">
+                  <div class="suite-price">
+                    <span class="price-val" data-usd="1850">$1,850</span>
+                    <span>/ យប់</span>
+                  </div>
+                  <div style="display: flex; gap: 8px">
+                    <button
+                      onclick="openRoomDetailModal('cliffside-penthouse')"
+                      class="btn btn-outline btn-sm"
+                    >
+                      លម្អិត
+                    </button>
+                    <button
+                      onclick="openBookingModal('cliffside-penthouse')"
+                      class="btn btn-primary btn-sm"
+                    >
+                      កក់បន្ទប់
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Suite 3 -->
+            <article class="suite-card">
+              <div class="suite-img-wrap">
+                <img
+                  class="suite-img"
+                  src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=800&q=80"
+                  alt="Lagoon Spa Villa Pavilion"
+                />
+                <span class="suite-badge">សួនឯកជន</span>
+              </div>
+              <div class="suite-content">
+                <div>
+                  <h3 class="suite-title">Lagoon Spa Villa Pavilion</h3>
+                  <p class="suite-desc">
+                    ហ៊ុមព័ទ្ធដោយព្រៃត្រូពិកបៃតងខ្ចី និងបឹងទឹកប្រៃស្ងប់ស្ងាត់
+                    មានបន្ទប់ស្ប៉ាឯកជន និងផ្លូវដើរផ្ទាល់ទៅកាន់ឆ្នេរខ្សាច់ស។
+                  </p>
+                </div>
+
+                <div class="suite-specs-grid">
+                  <div>
+                    <span class="suite-spec-label">ទំហំ</span>
+                    <span class="suite-spec-val">1,600 ហ្វីត²</span>
+                  </div>
+                  <div>
+                    <span class="suite-spec-label">ចំនួនភ្ញៀវ</span>
+                    <span class="suite-spec-val">4 នាក់</span>
+                  </div>
+                  <div>
+                    <span class="suite-spec-label">គ្រែ</span>
+                    <span class="suite-spec-val">2 Queen Beds</span>
+                  </div>
+                </div>
+
+                <div class="suite-footer">
+                  <div class="suite-price">
+                    <span class="price-val" data-usd="1200">$1,200</span>
+                    <span>/ យប់</span>
+                  </div>
+                  <div style="display: flex; gap: 8px">
+                    <button
+                      onclick="openRoomDetailModal('lagoon-spa-villa')"
+                      class="btn btn-outline btn-sm"
+                    >
+                      លម្អិត
+                    </button>
+                    <button
+                      onclick="openBookingModal('lagoon-spa-villa')"
+                      class="btn btn-primary btn-sm"
+                    >
+                      កក់បន្ទប់
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. BOOKING CALENDAR SECTION (7-COL INTERACTIVE CSS GRID) -->
+      <section
+        id="booking"
+        class="section-py"
+        style="background-color: var(--color-bg-subtle)"
+      >
+        <div class="container">
+          <div class="section-header">
+            <span class="badge-sub" id="cal-sub"
+              >ប្រព័ន្ធប្រតិទិនកក់បន្ទប់អន្តរកម្ម</span
+            >
+            <h2 class="section-title" id="cal-title">
+              កក់បន្ទប់ និងពិនិត្យតម្លៃផ្ទាល់
+            </h2>
+            <p class="section-desc" id="cal-desc">
+              ជ្រើសរើសកាលបរិច្ឆេទស្នាក់នៅ ចំនួនភ្ញៀវ និងប្រភេទវីឡា
+              ដើម្បីទទួលបានតម្លៃពិសេស និងកញ្ចប់អត្ថប្រយោជន៍ល្អបំផុត។
+            </p>
+          </div>
+
+          <!-- CSS Grid Calendar + Sidebar Container -->
+          <div class="calendar-container-grid">
+            <!-- Calendar Main Body -->
+            <div class="calendar-main">
+              <!-- Cal Header -->
+              <div class="cal-header-row">
+                <span class="cal-month-title" id="cal-display-month"
+                  >ខែតុលា ឆ្នាំ២០២៦</span
+                >
+                <div style="display: flex; gap: 8px">
+                  <button
+                    onclick="changeMonth(-1)"
+                    class="btn btn-outline btn-sm"
+                  >
+                    ‹ ខែមុន
+                  </button>
+                  <button
+                    onclick="changeMonth(1)"
+                    class="btn btn-outline btn-sm"
+                  >
+                    ខែបន្ទាប់ ›
+                  </button>
+                </div>
+              </div>
+
+              <!-- 7-Column Day Names -->
+              <div class="calendar-grid-7" id="calendar-days-container">
+                <!-- Dynamically populated by JavaScript -->
+              </div>
+
+              <!-- Counters: Adults, Children, Rooms -->
+              <div class="guest-counter-grid">
+                <div class="counter-card">
+                  <span class="counter-label" id="lbl-adults"
+                    >មនុស្សពេញវ័យ (Adults)</span
+                  >
+                  <div class="counter-box">
+                    <button
+                      onclick="adjustCounter('adults', -1)"
+                      class="counter-btn"
+                    >
+                      −
+                    </button>
+                    <strong id="val-adults">2 នាក់</strong>
+                    <button
+                      onclick="adjustCounter('adults', 1)"
+                      class="counter-btn"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+                <div class="counter-card">
+                  <span class="counter-label" id="lbl-children"
+                    >កុមារ (Children)</span
+                  >
+                  <div class="counter-box">
+                    <button
+                      onclick="adjustCounter('children', -1)"
+                      class="counter-btn"
+                    >
+                      −
+                    </button>
+                    <strong id="val-children">0 នាក់</strong>
+                    <button
+                      onclick="adjustCounter('children', 1)"
+                      class="counter-btn"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+                <div class="counter-card">
+                  <span class="counter-label" id="lbl-suites"
+                    >ចំនួនបន្ទប់ (Suites)</span
+                  >
+                  <div class="counter-box">
+                    <button
+                      onclick="adjustCounter('rooms', -1)"
+                      class="counter-btn"
+                    >
+                      −
+                    </button>
+                    <strong id="val-rooms">1 ខ្នង</strong>
+                    <button
+                      onclick="adjustCounter('rooms', 1)"
+                      class="counter-btn"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Booking Summary Sidebar -->
+            <aside class="booking-sidebar">
+              <div class="sidebar-header">
+                <span class="badge-sub" id="lbl-summary-badge"
+                  >សង្ខេបការកក់</span
+                >
+                <h3 class="sidebar-title" id="summary-room-title">
+                  Azure Overwater Sanctuary
+                </h3>
+                <p
+                  style="
+                    font-size: 12px;
+                    color: var(--color-text-muted);
+                    margin-top: 4px;
+                  "
+                  id="summary-dates-text"
+                >
+                  ជ្រើសរើសកាលបរិច្ឆេទនៅលើប្រតិទិន
+                </p>
+              </div>
+
+              <div class="summary-list">
+                <div class="summary-item">
+                  <span id="lbl-room-subtotal"
+                    >ថ្លៃបន្ទប់ (<span id="summary-nights-count">3</span>
+                    យប់)</span
+                  >
+                  <strong id="summary-subtotal-val">$4,350</strong>
+                </div>
+                <div class="summary-item">
+                  <span id="lbl-tax">ថ្លៃសេវា & ពន្ធរមណីយដ្ឋាន (12%)</span>
+                  <strong id="summary-tax-val">$522</strong>
+                </div>
+                <div
+                  class="summary-item"
+                  id="summary-discount-row"
+                  style="color: var(--color-success); display: none"
+                >
+                  <span>បញ្ចុះតម្លៃពិសេស (SUNSET15)</span>
+                  <strong id="summary-discount-val">-$652</strong>
+                </div>
+                <div class="summary-item total">
+                  <span id="lbl-total-est">តម្លៃសរុបប៉ាន់ស្មាន</span>
+                  <strong id="summary-total-val">$4,872</strong>
+                </div>
+              </div>
+
+              <button
+                onclick="openBookingModal('azure-overwater')"
+                class="btn btn-primary"
+                style="width: 100%; padding: 14px; font-size: 14px"
+                id="btn-proceed-booking"
+              >
+                បន្តទៅការបំពេញព័ត៌មានភ្ញៀវ →
+              </button>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. EXPERIENCES & WELLNESS (12-COL CSS GRID) -->
+      <section id="experiences" class="section-py">
+        <div class="container">
+          <div class="section-header">
+            <span class="badge-sub" id="exp-sub"
+              >បទពិសោធន៍កម្សាន្តផ្តាច់មុខ · EXPERIENCES & WELLNESS</span
+            >
+            <h2 class="section-title" id="exp-title">
+              ដំណើរកម្សាន្ត និងការសម្រាកកាយដ៏វិសេសវិសាល
+            </h2>
+            <p class="section-desc" id="exp-desc">
+              បង្កើនថាមពលជីវិតរបស់អ្នកជាមួយការថែទាំសុខភាពបែបវារីអគ្គីសនី
+              ដំណើរកម្សាន្តទូកកាតាម៉ារ៉ានលើផ្ទៃសមុទ្រ
+              និងសិល្បៈយោគៈស្ងប់ចិត្តនាពេលព្រឹកព្រលឹម។
+            </p>
+          </div>
+
+          <div class="experiences-grid">
+            <!-- Experience 1: Thalasso Hydro-Sanctuary -->
+            <article class="exp-card exp-col-4">
+              <div class="exp-img-wrap">
+                <img
+                  class="exp-img"
+                  src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1000&q=80"
+                  alt="The Thalasso Hydro-Sanctuary"
+                />
+                <span class="exp-badge">Wellness & Thermal</span>
+                <div class="exp-meta-bar">
+                  <span>⏱️ 90 - 180 នាទី</span>
+                  <span class="exp-price-pill"
+                    ><span class="price-val" data-usd="160">$160</span></span
+                  >
+                </div>
+              </div>
+              <div class="exp-body">
+                <div>
+                  <h3 class="exp-title">The Thalasso Hydro-Sanctuary</h3>
+                  <p class="exp-desc">
+                    ប្រើប្រាស់ទឹករ៉ែសមុទ្រធម្មជាតិក្តៅឧណ្ហៗស្មើកម្តៅរាងកាយ
+                    ជាមួយសៀគ្វីទឹកបាញ់ម៉ាស្សា
+                    និងការរុំភក់សារ៉ាយសមុទ្រព្យាបាលស្បែក។
+                  </p>
+                </div>
+                <div class="exp-footer">
+                  <span class="exp-tag">Holistic Wellness</span>
+                  <button
+                    onclick="
+                      openBookingModal('azure-overwater', 'thalasso-spa')
+                    "
+                    class="btn btn-outline btn-sm"
+                  >
+                    កក់ជាមួយបន្ទប់ →
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Experience 2: Coral Reef Catamaran -->
+            <article class="exp-card exp-col-4">
+              <div class="exp-img-wrap">
+                <img
+                  class="exp-img"
+                  src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=80"
+                  alt="Coral Reef Catamaran Expedition"
+                />
+                <span class="exp-badge">Coastal & Yacht</span>
+                <div class="exp-meta-bar">
+                  <span>⏱️ 3.5 ម៉ោង</span>
+                  <span class="exp-price-pill"
+                    ><span class="price-val" data-usd="220">$220</span></span
+                  >
+                </div>
+              </div>
+              <div class="exp-body">
+                <div>
+                  <h3 class="exp-title">Coral Reef Catamaran Expedition</h3>
+                  <p class="exp-desc">
+                    ជិះទូកកាតាម៉ារ៉ានប្រណិតទំហំ ៥២ ហ្វីត
+                    ទៅកាន់តំបន់ផ្កាថ្មការពារដោយ UNESCO និងមុជទឹក Snorkeling
+                    មើលអណ្តើកសមុទ្រ និងត្រីបបែល Manta Ray។
+                  </p>
+                </div>
+                <div class="exp-footer">
+                  <span class="exp-tag">Marine Adventure</span>
+                  <button
+                    onclick="openBookingModal('azure-overwater', 'catamaran')"
+                    class="btn btn-outline btn-sm"
+                  >
+                    កក់ជាមួយបន្ទប់ →
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Experience 3: Private Cave Wine Tasting -->
+            <article class="exp-card exp-col-4">
+              <div class="exp-img-wrap">
+                <img
+                  class="exp-img"
+                  src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=1000&q=80"
+                  alt="Private Cave Vintage Tasting"
+                />
+                <span class="exp-badge">Epicurean</span>
+                <div class="exp-meta-bar">
+                  <span>⏱️ 75 នាទី</span>
+                  <span class="exp-price-pill"
+                    ><span class="price-val" data-usd="140">$140</span></span
+                  >
+                </div>
+              </div>
+              <div class="exp-body">
+                <div>
+                  <h3 class="exp-title">Private Cave Vintage Tasting</h3>
+                  <p class="exp-desc">
+                    បន្ទប់ស្រាក្រោមរូងថ្មកំបោរធម្មជាតិ
+                    រក្សាទុកស្រាទំពាំងបាយជូរកម្រជាង ៣,២០០ ដប ដឹកនាំដោយអ្នកជំនាញ
+                    Sommelier ជាមួយឈីស និងសាច់ក្រៀមបារាំង។
+                  </p>
+                </div>
+                <div class="exp-footer">
+                  <span class="exp-tag">Wine & Spirits</span>
+                  <button
+                    onclick="openBookingModal('azure-overwater', 'wine')"
+                    class="btn btn-outline btn-sm"
+                  >
+                    កក់ជាមួយបន្ទប់ →
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Experience 4: Sunrise Prana & Sound Alchemy (Span 12) -->
+            <article class="exp-card exp-col-12">
+              <div class="exp-img-wrap">
+                <img
+                  class="exp-img"
+                  src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=1000&q=80"
+                  alt="Sunrise Prana & Sound Alchemy"
+                />
+                <span class="exp-badge">Sanctuary · រៀងរាល់ព្រឹក</span>
+                <div class="exp-meta-bar">
+                  <span>⏱️ 60 នាទី</span>
+                  <span class="exp-price-pill" style="color: #6ee7b7"
+                    >ឥតគិតថ្លៃសម្រាប់ភ្ញៀវស្នាក់នៅ</span
+                  >
+                </div>
+              </div>
+              <div class="exp-body" style="padding: 32px">
+                <div>
+                  <span class="badge-sub">សមាធិ និងព្យាបាលដោយសំឡេង</span>
+                  <h3 class="exp-title" style="font-size: 24px">
+                    Sunrise Prana & Sound Alchemy
+                  </h3>
+                  <p class="exp-desc" style="font-size: 14px; margin-top: 8px">
+                    ស្វាគមន៍ព្រះអាទិត្យរះនៅលើវេទិកាឈើតាត្រៅមាត់ច្រាំងថ្មខ្ពស់
+                    ហាត់យោគៈស្រទន់ និងស្តាប់រំញ័រចានកែវថ្ម Quartz Crystal Bowls
+                    បន្លឺសូរយ៉ាងស្រទន់រសាត់តាមខ្យល់សមុទ្របរិសុទ្ធ។
+                  </p>
+                </div>
+                <div class="exp-footer" style="margin-top: 16px">
+                  <span class="exp-tag">Mind & Body Sanctuary</span>
+                  <button
+                    onclick="openBookingModal('azure-overwater')"
+                    class="btn btn-primary"
+                    style="padding: 8px 18px; font-size: 12px"
+                  >
+                    ចុះឈ្មោះចូលរួម →
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. DINING VENUES (CSS GRID) -->
+      <section
+        id="dining"
+        class="section-py"
+        style="background-color: var(--color-bg-subtle)"
+      >
+        <div class="container">
+          <div class="section-header">
+            <span class="badge-sub" id="dining-sub"
+              >សិល្បៈធ្វើម្ហូប និងភោជនីយដ្ឋាន</span
+            >
+            <h2 class="section-title" id="dining-title">
+              រសជាតិអាហារសមុទ្រលំដាប់ផ្កាយមីស៊ឺឡាំង
+            </h2>
+            <p class="section-desc" id="dining-desc">
+              ពីត្រីធូណាស្រស់ៗនេសាទនៅមាត់សមុទ្រ រហូតដល់កម្មវិធីអូម៉ាកាសេជប៉ុន
+              Toyosu Omakase ដ៏កម្រិតខ្ពស់។
+            </p>
+          </div>
+
+          <div class="dining-grid">
+            <!-- Venue 1: The Azure Veranda -->
+            <article class="dining-card" id="venue-card-azure">
+              <img
+                class="dining-img"
+                src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80"
+                alt="The Azure Veranda"
+              />
+              <div class="dining-body">
+                <div>
+                  <span class="badge-sub"
+                    >អាហារពេលព្រឹក & ពេលល្ងាច · FINE COASTAL SEAFOOD</span
+                  >
+                  <h3 class="dining-title">The Azure Veranda</h3>
+                  <p style="font-size: 13px; color: var(--color-text-muted)">
+                    ភោជនីយដ្ឋានមាត់ទឹករលក បម្រើអាហារសមុទ្រមេឌីទែរ៉ាណេ
+                    ត្រីធូណានេសាទស្រស់ៗ និងស្រាក្រឡុកពេលថ្ងៃលិច។
+                  </p>
+                  <div
+                    style="
+                      font-size: 11px;
+                      color: var(--color-accent);
+                      margin-top: 8px;
+                      font-weight: 500;
+                    "
+                  >
+                    🕒 07:00 – 11:30 | 18:00 – 22:30 · សម្លៀកបំពាក់៖ Resort
+                    Elegant
+                  </div>
+                  <div class="dish-tags" style="margin-top: 10px">
+                    <span class="dish-tag">Wild Langoustine</span>
+                    <span class="dish-tag">Sea Bass in Salt Crust</span>
+                    <span class="dish-tag">Crème Brûlée</span>
+                  </div>
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-top: 14px;
+                    border-top: 1px solid var(--color-border);
+                    padding-top: 12px;
+                  "
+                >
+                  <span style="font-size: 11px; color: var(--color-text-muted)"
+                    >ណែនាំកក់មុន ៤៨ ម៉ោង</span
+                  >
+                  <button
+                    id="reserve-btn-azure"
+                    onclick="openTableModal('azure-veranda')"
+                    class="btn btn-primary btn-sm"
+                  >
+                    កក់តុអាហារ →
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Venue 2: Tide & Ember -->
+            <article class="dining-card" id="venue-card-tide">
+              <img
+                class="dining-img"
+                src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80"
+                alt="Tide & Ember Charcoal Hearth"
+              />
+              <div class="dining-body">
+                <div>
+                  <span class="badge-sub"
+                    >អាហារថ្ងៃត្រង់ & ពេលល្ងាច · WOODFIRED GRILL & RAW BAR</span
+                  >
+                  <h3 class="dining-title">Tide & Ember Charcoal Hearth</h3>
+                  <p style="font-size: 13px; color: var(--color-text-muted)">
+                    សាច់គោអូស្ត្រាលី A5 Miyazaki Wagyu អាំងលើធ្យូងឈើក្រូចឆ្មារ
+                    និងខ្យងអយស្ទ័រប៉ាស៊ីហ្វិកត្រជាក់ស្រស់។
+                  </p>
+                  <div
+                    style="
+                      font-size: 11px;
+                      color: var(--color-accent);
+                      margin-top: 8px;
+                      font-weight: 500;
+                    "
+                  >
+                    🕒 12:00 – 16:00 | 18:30 – 23:00 · សម្លៀកបំពាក់៖ Smart
+                    Casual
+                  </div>
+                  <div class="dish-tags" style="margin-top: 10px">
+                    <span class="dish-tag">Dry-Aged Tomahawk</span>
+                    <span class="dish-tag">Charred Spanish Octopus</span>
+                    <span class="dish-tag">Pacific Oysters</span>
+                  </div>
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-top: 14px;
+                    border-top: 1px solid var(--color-border);
+                    padding-top: 12px;
+                  "
+                >
+                  <span style="font-size: 11px; color: var(--color-text-muted)"
+                    >Raw Bar មិនបាច់កក់</span
+                  >
+                  <button
+                    id="reserve-btn-tide"
+                    onclick="openTableModal('tide-and-ember')"
+                    class="btn btn-primary btn-sm"
+                  >
+                    កក់តុអាហារ →
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Venue 3: Kokoro Omakase -->
+            <article class="dining-card" id="venue-card-kokoro">
+              <img
+                class="dining-img"
+                src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=800&q=80"
+                alt="Kokoro Omakase & Sake Vault"
+              />
+              <div class="dining-body">
+                <div>
+                  <span class="badge-sub"
+                    >ពេលល្ងាច (២ វេន) · MODERN EDOMAE SUSHI</span
+                  >
+                  <h3 class="dining-title">Kokoro Omakase & Sake Vault</h3>
+                  <p style="font-size: 13px; color: var(--color-text-muted)">
+                    សិល្បៈធ្វើស៊ូស៊ីបែប Edo-mae ១៨ វគ្គ តុពិសេស ១០ កៅអី
+                    គ្រឿងផ្សំនាំចូលពីផ្សារ Toyosu តូក្យូ។
+                  </p>
+                  <div
+                    style="
+                      font-size: 11px;
+                      color: var(--color-accent);
+                      margin-top: 8px;
+                      font-weight: 500;
+                    "
+                  >
+                    🕒 វេន ១: 18:00 | វេន ២: 20:30 · សម្លៀកបំពាក់៖ Formal
+                    Elegance
+                  </div>
+                  <div class="dish-tags" style="margin-top: 10px">
+                    <span class="dish-tag">Otoro with 24k Gold</span>
+                    <span class="dish-tag">Hokkaido Sea Urchin</span>
+                    <span class="dish-tag">Vintage Junmai Sake</span>
+                  </div>
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-top: 14px;
+                    border-top: 1px solid var(--color-border);
+                    padding-top: 12px;
+                  "
+                >
+                  <span style="font-size: 11px; color: var(--color-text-muted)"
+                    >កំណត់ត្រឹមតែ ១០ កៅអី</span
+                  >
+                  <button
+                    id="reserve-btn-kokoro"
+                    onclick="openTableModal('kokoro-omakase')"
+                    class="btn btn-primary btn-sm"
+                  >
+                    កក់តុអាហារ →
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 8. RESORT GROUNDS & TOPOGRAPHY MAP (CSS GRID) -->
+      <section id="grounds" class="section-py">
+        <div class="container">
+          <div class="section-header">
+            <span class="badge-sub" id="map-sub">ប្លង់រមណីយដ្ឋាន ៤២ ហិកតា</span>
+            <h2 class="section-title" id="map-title">
+              ដែនជម្រកធម្មជាតិ និងផែនទី
+            </h2>
+            <p class="section-desc" id="map-desc">
+              ស្វែងយល់ពីទីតាំងផ្សេងៗនៅលើឧបទ្វីបឯកជន រួមទាំងផែទូកកាតាម៉ារ៉ាន
+              អាងហែលទឹក និងស្ប៉ាវារីអគ្គីសនី។
+            </p>
+          </div>
+
+          <div class="map-grid-container">
+            <div class="map-canvas-mock">
+              <div class="map-pins-layer">
+                <div
+                  class="map-pin active"
+                  style="left: 28%; top: 38%"
+                  onclick="selectPavilion('A')"
+                >
+                  A
+                </div>
+                <div
+                  class="map-pin"
+                  style="left: 45%; top: 62%"
+                  onclick="selectPavilion('B')"
+                >
+                  B
+                </div>
+                <div
+                  class="map-pin"
+                  style="left: 70%; top: 42%"
+                  onclick="selectPavilion('C')"
+                >
+                  C
+                </div>
+                <div
+                  class="map-pin"
+                  style="left: 55%; top: 25%"
+                  onclick="selectPavilion('D')"
+                >
+                  D
+                </div>
+                <div
+                  class="map-pin"
+                  style="left: 82%; top: 75%"
+                  onclick="selectPavilion('E')"
+                >
+                  E
+                </div>
+              </div>
+
+              <div>
+                <span class="badge-sub" style="color: #e8c872"
+                  >ផែនទីឧបទ្វីបឯកជន</span
+                >
+                <h3 style="color: #ffffff; font-size: 24px">
+                  The 42-Acre Coral Sanctuary
+                </h3>
+                <p
+                  style="
+                    font-size: 13px;
+                    color: #a1a1aa;
+                    max-width: 480px;
+                    margin-top: 4px;
+                  "
+                >
+                  រមណីយដ្ឋានមានសេវាឡានហ្គោលអគ្គិសនីដឹកជញ្ជូនឥតគិតថ្លៃ ២៤ ម៉ោង
+                  ទៅកាន់គ្រប់ទីតាំង។
+                </p>
+              </div>
+
+              <div
+                style="
+                  background: rgba(0, 0, 0, 0.6);
+                  padding: 12px 18px;
+                  border-radius: var(--radius-md);
+                  align-self: flex-start;
+                  font-size: 12px;
+                  border: 1px solid rgba(255, 255, 255, 0.15);
+                  z-index: 5;
+                "
+              >
+                📍 N 34°01' W 118°41' · ឆ្នេរម៉ាលីប៊ូរីហ្វ (Malibu Reef)
+              </div>
+            </div>
+
+            <div class="map-directory-card">
+              <div>
+                <span class="badge-sub">បញ្ជីទីតាំងសំខាន់ៗ</span>
+                <h3 style="font-size: 20px; margin-bottom: 14px">
+                  Sanctuary Pavilions
+                </h3>
+
+                <div class="pavilion-list">
+                  <div
+                    class="pavilion-item active"
+                    id="p-item-A"
+                    onclick="selectPavilion('A')"
+                  >
+                    <span>🌊 Azure Overwater Villas</span>
+                    <strong style="color: var(--color-accent)">តំបន់ A</strong>
+                  </div>
+                  <div
+                    class="pavilion-item"
+                    id="p-item-B"
+                    onclick="selectPavilion('B')"
+                  >
+                    <span>⛰️ Cliffside Horizon Suites</span>
+                    <strong style="color: var(--color-accent)">តំបន់ B</strong>
+                  </div>
+                  <div
+                    class="pavilion-item"
+                    id="p-item-C"
+                    onclick="selectPavilion('C')"
+                  >
+                    <span>🌿 Mangrove Lagoon Spa</span>
+                    <strong style="color: var(--color-accent)">តំបន់ C</strong>
+                  </div>
+                  <div
+                    class="pavilion-item"
+                    id="p-item-D"
+                    onclick="selectPavilion('D')"
+                  >
+                    <span>🍽️ The Azure Veranda & Bar</span>
+                    <strong style="color: var(--color-accent)">តំបន់ D</strong>
+                  </div>
+                  <div
+                    class="pavilion-item"
+                    id="p-item-E"
+                    onclick="selectPavilion('E')"
+                  >
+                    <span>⛵ Private Catamaran Marina</span>
+                    <strong style="color: var(--color-accent)">តំបន់ E</strong>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                style="
+                  background-color: var(--color-bg-subtle);
+                  padding: 12px;
+                  border-radius: var(--radius-md);
+                  font-size: 12px;
+                  color: var(--color-text-muted);
+                "
+                id="pavilion-info-text"
+              >
+                💡 <strong>តំបន់ A:</strong> វីឡាលើផ្ទៃទឹកសមុទ្រចំនួន ១៤ ខ្នង
+                ភ្ជាប់ជាមួយស្ពានឈើឯកជន និងឆ្នេរខ្សាច់ស។
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 9. REVIEWS & ACCREDITATIONS -->
+      <section
+        class="section-py"
+        style="
+          background-color: var(--color-bg-subtle);
+          border-top: 1px solid var(--color-border);
+        "
+      >
+        <div class="container">
+          <div class="metrics-row">
+            <div class="metric-col">
+              <span class="metric-number">4.98</span>
+              <div class="metric-label">ការវាយតម្លៃរួម (Overall Rating)</div>
+            </div>
+            <div class="metric-col">
+              <span class="metric-number">9.9</span>
+              <div class="metric-label">ទីតាំងមាត់សមុទ្រឥតខ្ចោះ</div>
+            </div>
+            <div class="metric-col">
+              <span class="metric-number">9.9</span>
+              <div class="metric-label">អនាម័យ និងភាពស្ងប់ស្ងាត់</div>
+            </div>
+            <div class="metric-col">
+              <span class="metric-number">9.8</span>
+              <div class="metric-label">ម្ហូបអាហារ និងស្រាលំដាប់ខ្ពស់</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 10. FOOTER (CSS GRID) -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <span class="brand-title" style="color: #ffffff">AURA COVE</span>
+            <p
+              style="
+                font-size: 13px;
+                color: #a89f91;
+                margin: 14px 0;
+                line-height: 1.7;
+                max-width: 380px;
+              "
+            >
+              រមណីយដ្ឋាន
+              និងជម្រកសម្រាកលំហែកាយស្ថាបត្យកម្មលើច្រាំងថ្មម៉ាលីប៊ូរីហ្វ។
+              វីឡាឯកជនចំនួន ១៤ ខ្នង ឧទ្ទិសដល់ភាពស្ងប់ស្ងាត់ វារីអគ្គីសនី
+              និងម្ហូបសមុទ្រប៉ាស៊ីហ្វិក។
+            </p>
+            <div style="font-size: 12px; color: #dcd0bd; line-height: 1.8">
+              <div>
+                📍 38400 Pacific Coast Sanctuary Way, Malibu Reef, CA 90265
+              </div>
+              <div>📞 Concierge ផ្ទាល់៖ +1 (800) 492-AURA</div>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>តំណភ្ជាប់រហ័ស</h4>
+            <ul class="footer-links">
+              <li><a href="#accommodations">វីឡា និងបន្ទប់ស្នាក់នៅ</a></li>
+              <li><a href="#booking">ប្រតិទិនកក់បន្ទប់ និងតម្លៃ</a></li>
+              <li><a href="#experiences">សេវាកម្មស្ប៉ា Thalasso</a></li>
+              <li><a href="#dining">ភោជនីយដ្ឋាន The Azure & Omakase</a></li>
+              <li><a href="#grounds">ផែនទីរមណីយដ្ឋាន និងផែទូក</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>ចុះឈ្មោះទទួលព័ត៌មាន (The Gazette)</h4>
+            <p style="font-size: 13px; color: #a89f91; margin-bottom: 14px">
+              ទទួលបានការអញ្ជើញពិសេសតាមរដូវកាល កាលវិភាគកម្មវិធីសម្រាកចិត្ត
+              និងការបញ្ចេញស្រាទំពាំងបាយជូរកម្រ។
+            </p>
+            <div style="display: flex; gap: 8px">
+              <input
+                type="email"
+                id="nl-email"
+                placeholder="បញ្ចូលអ៊ីមែលរបស់អ្នក..."
+                style="
+                  flex: 1;
+                  padding: 10px 14px;
+                  border-radius: var(--radius-sm);
+                  border: 1px solid var(--color-border-dark);
+                  background: #292524;
+                  color: #ffffff;
+                  font-size: 12px;
+                  outline: none;
+                "
+              />
+              <button
+                onclick="handleSubscribeNewsletter()"
+                class="btn btn-accent btn-sm"
+              >
+                ចុះឈ្មោះ
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div>
+            🌿 រមណីយដ្ឋានថាមពលពន្លឺព្រះអាទិត្យ ១០០% · ដៃគូជីវមណ្ឌលការពារដោយ
+            UNESCO
+          </div>
+          <div>© 2026 Aura Cove Resort & Reserve. រក្សាសិទ្ធិគ្រប់យ៉ាង។</div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ==========================================================================
+       MODALS: BOOKING, ROOM DETAIL, MY BOOKINGS
+       ========================================================================== -->
+
+    <!-- Modal 1: Booking Modal -->
+    <div id="booking-modal" class="modal-backdrop">
+      <div class="modal-box">
+        <div class="modal-header">
+          <div>
+            <span class="badge-sub" style="margin-bottom: 0"
+              >RESERVATION ENGINE</span
+            >
+            <h3 class="modal-title" id="m-book-title">
+              បំពេញការកក់បន្ទប់ប្រណិត
+            </h3>
+          </div>
+          <button onclick="closeBookingModal()" class="modal-close-btn">
+            &times;
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <form id="booking-form" onsubmit="handleBookingSubmit(event)">
+            <!-- Select Suite -->
+            <div class="form-group">
+              <label class="form-label" id="lbl-m-suite"
+                >ប្រភេទបន្ទប់ ឬវីឡា</label
+              >
+              <select
+                id="m-select-suite"
+                class="form-select"
+                onchange="updateBookingModalPrice()"
+              >
+                <option value="azure-overwater" data-price="1450">
+                  Azure Overwater Sanctuary ($1,450 / យប់)
+                </option>
+                <option value="cliffside-penthouse" data-price="1850">
+                  Cliffside Horizon Penthouse ($1,850 / យប់)
+                </option>
+                <option value="lagoon-spa-villa" data-price="1200">
+                  Lagoon Spa Villa Pavilion ($1,200 / យប់)
+                </option>
+              </select>
+            </div>
+
+            <!-- Dates -->
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">ថ្ងៃចូលស្នាក់ (Check-in)</label>
+                <input
+                  type="date"
+                  id="m-date-in"
+                  class="form-input"
+                  required
+                  onchange="updateBookingModalPrice()"
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-label">ថ្ងៃចាកចេញ (Check-out)</label>
+                <input
+                  type="date"
+                  id="m-date-out"
+                  class="form-input"
+                  required
+                  onchange="updateBookingModalPrice()"
+                />
+              </div>
+            </div>
+
+            <!-- Guest Contact Info -->
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">គោត្តនាម & នាម (Full Name)</label>
+                <input
+                  type="text"
+                  id="m-guest-name"
+                  class="form-input"
+                  placeholder="ឧទាហរណ៍៖ សុខ ចិន្តា"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-label">អ៊ីមែល (Email)</label>
+                <input
+                  type="email"
+                  id="m-guest-email"
+                  class="form-input"
+                  placeholder="your@email.com"
+                  required
+                />
+              </div>
+            </div>
+
+            <!-- Add-ons Selection -->
+            <div class="form-group">
+              <label class="form-label"
+                >សេវាកម្មបន្ថែមពិសេស (Exclusive Add-ons)</label
+              >
+              <label class="addon-item">
+                <div style="display: flex; align-items: center; gap: 10px">
+                  <input
+                    type="checkbox"
+                    id="addon-transfer"
+                    value="180"
+                    onchange="updateBookingModalPrice()"
+                  />
+                  <div>
+                    <strong style="font-size: 13px"
+                      >VIP Chauffeur & Yacht Transfer</strong
+                    >
+                    <div
+                      style="font-size: 11px; color: var(--color-text-muted)"
+                    >
+                      ទទួលនៅព្រលានយន្តហោះដោយ Mercedes Maybach ឬ Catamaran
+                    </div>
+                  </div>
+                </div>
+                <strong style="color: var(--color-accent); font-size: 13px"
+                  >+$180</strong
+                >
+              </label>
+
+              <label class="addon-item">
+                <div style="display: flex; align-items: center; gap: 10px">
+                  <input
+                    type="checkbox"
+                    id="addon-spa"
+                    value="95"
+                    onchange="updateBookingModalPrice()"
+                  />
+                  <div>
+                    <strong style="font-size: 13px"
+                      >Unlimited Thalasso Spa Pass</strong
+                    >
+                    <div
+                      style="font-size: 11px; color: var(--color-text-muted)"
+                    >
+                      ចូលសៀគ្វីទឹករ៉ែសមុទ្រក្តៅ និងសូណាអំបិលហិម៉ាឡៃយ៍
+                    </div>
+                  </div>
+                </div>
+                <strong style="color: var(--color-accent); font-size: 13px"
+                  >+$95 / នាក់</strong
+                >
+              </label>
+
+              <label class="addon-item">
+                <div style="display: flex; align-items: center; gap: 10px">
+                  <input
+                    type="checkbox"
+                    id="addon-catamaran"
+                    value="320"
+                    onchange="updateBookingModalPrice()"
+                  />
+                  <div>
+                    <strong style="font-size: 13px"
+                      >Sunset Catamaran Charter</strong
+                    >
+                    <div
+                      style="font-size: 11px; color: var(--color-text-muted)"
+                    >
+                      ដំណើរកម្សាន្តទូកក្តោង ២.៥ ម៉ោង ជាមួយស្រាក្រឡុក និងកាណាពេ
+                    </div>
+                  </div>
+                </div>
+                <strong style="color: var(--color-accent); font-size: 13px"
+                  >+$320</strong
+                >
+              </label>
+            </div>
+
+            <!-- Promo Code -->
+            <div class="form-group">
+              <label class="form-label">កូដបញ្ចុះតម្លៃ (Promo Code)</label>
+              <div style="display: flex; gap: 8px">
+                <input
+                  type="text"
+                  id="m-promo-code"
+                  class="form-input"
+                  placeholder="SUNSET15"
+                  style="text-transform: uppercase"
+                />
+                <button
+                  type="button"
+                  onclick="applyPromoCode()"
+                  class="btn btn-outline btn-sm"
+                >
+                  អនុវត្ត
+                </button>
+              </div>
+              <span
+                id="promo-status"
+                style="font-size: 11px; margin-top: 4px; display: block"
+              ></span>
+            </div>
+
+            <!-- Price Summary in Modal -->
+            <div
+              style="
+                background: var(--color-bg-subtle);
+                padding: 16px;
+                border-radius: var(--radius-md);
+                margin-bottom: 20px;
+              "
+            >
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  font-size: 13px;
+                  margin-bottom: 6px;
+                "
+              >
+                <span>រយៈពេលស្នាក់នៅ៖</span>
+                <strong id="m-nights-count">3 យប់</strong>
+              </div>
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  font-size: 13px;
+                  margin-bottom: 6px;
+                "
+              >
+                <span>ថ្លៃសេវា & Add-ons៖</span>
+                <strong id="m-addons-val">$0</strong>
+              </div>
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  font-size: 16px;
+                  font-weight: 700;
+                  color: var(--color-primary);
+                  border-top: 1px dashed var(--color-border);
+                  padding-top: 10px;
+                "
+              >
+                <span>តម្លៃសរុប (Total)៖</span>
+                <strong
+                  style="color: var(--color-accent); font-size: 20px"
+                  id="m-total-val"
+                  >$4,872</strong
+                >
+              </div>
+            </div>
+
+            <button
+              type="submit"
+              class="btn btn-primary"
+              style="width: 100%; padding: 14px; font-size: 14px"
+            >
+              បញ្ជាក់ការកក់បន្ទប់ (Confirm Reservation) ✓
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2: Room Detail Modal -->
+    <div id="room-detail-modal" class="modal-backdrop">
+      <div class="modal-box">
+        <div class="modal-header">
+          <div>
+            <span class="badge-sub" id="rd-badge">SUITE ARCHITECTURE</span>
+            <h3 class="modal-title" id="rd-title">Azure Overwater Sanctuary</h3>
+          </div>
+          <button onclick="closeRoomDetailModal()" class="modal-close-btn">
+            &times;
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <img
+            id="rd-image"
+            src=""
+            alt="Suite"
+            style="
+              width: 100%;
+              height: 260px;
+              object-fit: cover;
+              border-radius: var(--radius-md);
+              margin-bottom: 16px;
+            "
+          />
+          <p
+            id="rd-desc"
+            style="
+              font-size: 14px;
+              color: var(--color-text-muted);
+              line-height: 1.7;
+              margin-bottom: 20px;
+            "
+          ></p>
+
+          <h4
+            style="
+              font-size: 14px;
+              text-transform: uppercase;
+              letter-spacing: 0.1em;
+              color: var(--color-accent);
+              margin-bottom: 10px;
+            "
+          >
+            គ្រឿងបរិក្ខារ & លក្ខណៈពិសេស
+          </h4>
+          <ul
+            id="rd-amenities"
+            style="
+              list-style: none;
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              gap: 8px;
+              font-size: 12px;
+              margin-bottom: 24px;
+            "
+          ></ul>
+
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              border-top: 1px solid var(--color-border);
+              padding-top: 16px;
+            "
+          >
+            <div>
+              <span
+                style="
+                  font-size: 11px;
+                  color: var(--color-text-muted);
+                  display: block;
+                "
+                >តម្លៃក្នុងមួយយប់</span
+              >
+              <strong
+                id="rd-price"
+                style="
+                  font-size: 24px;
+                  font-family: var(--font-serif);
+                  color: var(--color-accent);
+                "
+                >$1,450</strong
+              >
+            </div>
+            <button id="rd-book-btn" class="btn btn-primary">
+              កក់បន្ទប់នេះឥឡូវនេះ
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3: My Bookings Modal -->
+    <div id="my-bookings-modal" class="modal-backdrop">
+      <div class="modal-box">
+        <div class="modal-header">
+          <div>
+            <span class="badge-sub">GUEST RESERVATIONS</span>
+            <h3 class="modal-title">ការកក់របស់ខ្ញុំ (My Bookings)</h3>
+          </div>
+          <button onclick="closeMyBookingsModal()" class="modal-close-btn">
+            &times;
+          </button>
+        </div>
+
+        <!-- Tab Switcher -->
+        <div
+          style="
+            display: flex;
+            border-bottom: 1px solid var(--color-border);
+            padding: 0 16px;
+            background: var(--color-bg-subtle);
+          "
+        >
+          <button
+            id="tab-btn-rooms"
+            class="modal-tab-btn active"
+            onclick="switchBookingsTab('rooms')"
+          >
+            🏨 បន្ទប់ស្នាក់នៅ (<span id="count-room-bookings">0</span>)
+          </button>
+          <button
+            id="tab-btn-dining"
+            class="modal-tab-btn"
+            onclick="switchBookingsTab('dining')"
+          >
+            🍽️ តុអាហារ (<span id="count-dining-bookings">0</span>)
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <div id="bookings-list-container">
+            <!-- Populated from localStorage -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 4: Table Reservation Modal -->
+    <div id="table-reservation-modal" class="modal-backdrop">
+      <div class="modal-box" style="max-width: 540px">
+        <div class="modal-header">
+          <div>
+            <span class="badge-sub" style="margin-bottom: 0"
+              >CULINARY RESERVATION</span
+            >
+            <h3 class="modal-title" id="tbl-modal-title">កក់តុអាហារប្រណិត</h3>
+          </div>
+          <button onclick="closeTableModal()" class="modal-close-btn">
+            &times;
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <!-- Venue Banner -->
+          <div
+            style="
+              display: flex;
+              gap: 14px;
+              align-items: center;
+              background: var(--color-bg-subtle);
+              padding: 14px;
+              border-radius: var(--radius-md);
+              margin-bottom: 18px;
+              border: 1px solid var(--color-border);
+            "
+          >
+            <img
+              id="tbl-venue-img"
+              src=""
+              alt="Venue"
+              style="
+                width: 72px;
+                height: 72px;
+                border-radius: var(--radius-sm);
+                object-fit: cover;
+              "
+            />
+            <div style="flex: 1">
+              <h4
+                id="tbl-venue-name"
+                style="
+                  font-family: var(--font-serif);
+                  font-size: 17px;
+                  margin-bottom: 3px;
+                  color: var(--color-primary);
+                "
+              >
+                The Azure Veranda
+              </h4>
+              <div
+                id="tbl-venue-subtitle"
+                style="
+                  font-size: 11px;
+                  color: var(--color-accent);
+                  font-weight: 600;
+                "
+              >
+                Fine Coastal Seafood
+              </div>
+              <div
+                id="tbl-venue-hours"
+                style="
+                  font-size: 11px;
+                  color: var(--color-text-muted);
+                  margin-top: 3px;
+                "
+              >
+                🕒 07:00 – 11:30 | 18:00 – 22:30 · សម្លៀកបំពាក់៖ Resort Elegant
+              </div>
+            </div>
+          </div>
+
+          <!-- Reservation Form View -->
+          <div id="tbl-form-view">
+            <form
+              id="table-reservation-form"
+              onsubmit="handleTableSubmit(event)"
+            >
+              <input type="hidden" id="tbl-venue-id" value="azure-veranda" />
+
+              <div class="form-group">
+                <label class="form-label"
+                  >ជ្រើសរើសភោជនីយដ្ឋាន (Dining Venue)</label
+                >
+                <select
+                  id="tbl-select-venue"
+                  class="form-select"
+                  onchange="onTableVenueChange(this.value)"
+                >
+                  <option value="azure-veranda">
+                    The Azure Veranda (Fine Coastal Seafood)
+                  </option>
+                  <option value="tide-and-ember">
+                    Tide & Ember Charcoal Hearth (Woodfired Grill & Raw Bar)
+                  </option>
+                  <option value="kokoro-omakase">
+                    Kokoro Omakase & Sake Vault (Modern Edomae Sushi)
+                  </option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label"
+                  >គោត្តនាម & នាម / លេខវីឡា (Guest Name / Villa Room #) *</label
+                >
+                <input
+                  type="text"
+                  id="tbl-guest-name"
+                  class="form-input"
+                  placeholder="ឧទាហរណ៍៖ សុខ ចិន្តា ឬ Villa #204"
+                  required
+                />
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label">កាលបរិច្ឆេទ (Date) *</label>
+                  <input
+                    type="date"
+                    id="tbl-date"
+                    class="form-input"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label class="form-label">ម៉ោងកក់ (Time) *</label>
+                  <select id="tbl-time" class="form-select" required>
+                    <option value="18:00 (Sunset)">18:00 (Sunset)</option>
+                    <option value="18:30">18:30</option>
+                    <option value="19:00">19:00</option>
+                    <option value="19:30" selected>19:30</option>
+                    <option value="20:00">20:00</option>
+                    <option value="20:30">20:30</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">ចំនួនភ្ញៀវចូលរួម (Party Size)</label>
+                <div style="display: flex; gap: 8px" id="party-size-container">
+                  <button
+                    type="button"
+                    class="party-btn"
+                    onclick="setPartySize(1)"
+                  >
+                    1 នាក់
+                  </button>
+                  <button
+                    type="button"
+                    class="party-btn active"
+                    onclick="setPartySize(2)"
+                  >
+                    2 នាក់
+                  </button>
+                  <button
+                    type="button"
+                    class="party-btn"
+                    onclick="setPartySize(4)"
+                  >
+                    4 នាក់
+                  </button>
+                  <button
+                    type="button"
+                    class="party-btn"
+                    onclick="setPartySize(6)"
+                  >
+                    6 នាក់
+                  </button>
+                  <button
+                    type="button"
+                    class="party-btn"
+                    onclick="setPartySize(8)"
+                  >
+                    8 នាក់
+                  </button>
+                </div>
+                <input type="hidden" id="tbl-party-val" value="2" />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label"
+                  >ទីតាំងតុ និងសំណូមពរពិសេស (Seating & Special Requests)</label
+                >
+                <select id="tbl-special-req" class="form-select">
+                  <option
+                    value="តុជាប់មាត់ទឹកសមុទ្រ (Oceanfront / Window View)"
+                  >
+                    តុជាប់មាត់ទឹកសមុទ្រ (Oceanfront / Window View)
+                  </option>
+                  <option
+                    value="តុសម្រាប់រៀបចំខួបអាពាហ៍ពិពាហ៍ / ថ្ងៃកំណើត (Romantic Celebration)"
+                  >
+                    តុសម្រាប់រៀបចំខួបអាពាហ៍ពិពាហ៍ / ថ្ងៃកំណើត (Romantic
+                    Celebration)
+                  </option>
+                  <option
+                    value="តុស្ងប់ស្ងាត់ដាច់ដោយឡែក (Quiet Private Corner)"
+                  >
+                    តុស្ងប់ស្ងាត់ដាច់ដោយឡែក (Quiet Private Corner)
+                  </option>
+                  <option value="តុស្តង់ដារក្នុងសាល (Standard Indoor Seating)">
+                    តុស្តង់ដារក្នុងសាល (Standard Indoor Seating)
+                  </option>
+                </select>
+              </div>
+
+              <div style="margin-top: 20px">
+                <button
+                  type="submit"
+                  class="btn btn-primary"
+                  style="
+                    width: 100%;
+                    padding: 14px;
+                    font-size: 13px;
+                    font-weight: 600;
+                  "
+                >
+                  បញ្ជាក់ការកក់តុអាហារ (Confirm Table Reservation) ✓
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Success Confirmation View -->
+          <div
+            id="tbl-success-view"
+            style="display: none; text-align: center; padding: 16px 8px"
+          >
+            <div
+              style="
+                width: 56px;
+                height: 56px;
+                border-radius: 50%;
+                background: #dcfce7;
+                color: #16a34a;
+                font-size: 28px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto 12px;
+                font-weight: bold;
+              "
+            >
+              ✓
+            </div>
+            <span class="badge-sub" style="color: #16a34a"
+              >TABLE RESERVED SUCCESSFULLY</span
+            >
+            <h3
+              style="
+                font-family: var(--font-serif);
+                font-size: 22px;
+                color: var(--color-primary);
+                margin: 4px 0 8px;
+              "
+            >
+              ការកក់តុអាហារទទួលបានជោគជ័យ!
+            </h3>
+            <p
+              style="
+                font-size: 13px;
+                color: var(--color-text-muted);
+                margin-bottom: 18px;
+              "
+            >
+              តុរបស់អ្នកត្រូវបានកក់ទុកជាមុនរួចរាល់ហើយ។
+              សូមបង្ហាញលេខកូដកក់តុនេះនៅពេលអញ្ជើញដល់ភោជនីយដ្ឋាន។
+            </p>
+
+            <div
+              style="
+                background: var(--color-bg-subtle);
+                border: 1px dashed var(--color-border);
+                border-radius: var(--radius-md);
+                padding: 16px;
+                text-align: left;
+                font-size: 13px;
+                line-height: 1.8;
+                margin-bottom: 20px;
+              "
+            >
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  border-bottom: 1px solid var(--color-border);
+                  padding-bottom: 8px;
+                  margin-bottom: 8px;
+                "
+              >
+                <span style="color: var(--color-text-muted)"
+                  >លេខកូដកក់តុ (Code)៖</span
+                >
+                <strong
+                  id="tbl-conf-code"
+                  style="color: var(--color-accent); font-size: 15px"
+                  >TBL-48291</strong
+                >
+              </div>
+              <div>
+                <strong>🍽️ ភោជនីយដ្ឋាន៖</strong>
+                <span id="tbl-conf-venue">The Azure Veranda</span>
+              </div>
+              <div>
+                <strong>📅 កាលបរិច្ឆេទ & ម៉ោង៖</strong>
+                <span id="tbl-conf-time">2026-10-15 នៅម៉ោង 19:30</span>
+              </div>
+              <div>
+                <strong>👥 ចំនួនភ្ញៀវ៖</strong>
+                <span id="tbl-conf-guests">2 នាក់</span>
+              </div>
+              <div>
+                <strong>👤 ឈ្មោះភ្ញៀវ៖</strong>
+                <span id="tbl-conf-name">សុខ ចិន្តា</span>
+              </div>
+              <div>
+                <strong>✨ សំណូមពរ៖</strong>
+                <span id="tbl-conf-pref">តុជាប់មាត់ទឹកសមុទ្រ</span>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 10px; justify-content: center">
+              <button
+                onclick="closeTableModal()"
+                class="btn btn-primary btn-sm"
+                style="padding: 10px 20px"
+              >
+                បិទផ្ទាំង (Close)
+              </button>
+              <button
+                onclick="
+                  closeTableModal();
+                  openMyBookingsModal('dining');
+                "
+                class="btn btn-outline btn-sm"
+                style="padding: 10px 20px"
+              >
+                មើលការកក់តុអាហារ →
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast-box">
+      <span>✨</span>
+      <span id="toast-msg">ប្រតិបត្តិការជោគជ័យ!</span>
+    </div>
+  </body>
+</html>
