@@ -12,195 +12,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: "Khmer OS Battambang", sans-serif;
-      }
-
-      body {
-        background: #f4f0ea;
-        color: #1a1a1a;
-      }
-
-      .reservation {
-        max-width: 1500px;
-        margin: auto;
-        padding: 60px;
-      }
-
-      .heading span {
-        color: #b58a2d;
-        font-size: 14px;
-      }
-
-      .heading h1 {
-        font-size: 60px;
-        margin: 20px 0;
-        line-height: 1.2;
-      }
-
-      .heading p {
-        color: #777;
-        max-width: 850px;
-        font-size: 18px;
-      }
-
-      .booking-wrapper {
-        margin-top: 50px;
-        background: #ffffff;
-        border-radius: 35px;
-        padding: 40px;
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        gap: 40px;
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-      }
-
-      .booking-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 30px;
-        border-bottom: 1px solid #e5e0d9;
-        padding-bottom: 20px;
-      }
-
-      .booking-header h2 {
-        font-size: 38px;
-      }
-
-      .steps {
-        display: flex;
-        gap: 12px;
-      }
-
-      .steps button {
-        padding: 12px 22px;
-        border: 1px solid #ddd;
-        background: #fff;
-        border-radius: 12px;
-        cursor: pointer;
-      }
-
-      .booking-card {
-        background: #f3eee7;
-        border: 1px solid #e0d9cf;
-        border-radius: 25px;
-        padding: 30px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 25px;
-      }
-
-      .box label {
-        display: block;
-        font-weight: 600;
-        margin-bottom: 10px;
-      }
-
-      .box input,
-      .box select {
-        width: 100%;
-        height: 60px;
-        border: none;
-        background: #fff;
-        border-radius: 14px;
-        padding: 0 18px;
-        font-size: 16px;
-      }
-
-      .summary-box {
-        border: 1px solid #e3ddd4;
-        border-radius: 25px;
-        padding: 35px;
-        height: 100%;
-      }
-
-      .small-title {
-        color: #c59a36;
-        font-weight: 700;
-      }
-
-      .summary-box h3 {
-        margin-top: 15px;
-        font-size: 40px;
-        line-height: 1.2;
-      }
-
-      .summary-box p {
-        margin-top: 10px;
-        color: #777;
-      }
-
-      .summary-box hr {
-        border: none;
-        border-top: 1px solid #e8e2da;
-        margin: 25px 0;
-      }
-
-      .row,
-      .total {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 20px;
-      }
-
-      .row {
-        color: #666;
-      }
-
-      .row strong {
-        color: #111;
-      }
-
-      .total {
-        font-size: 30px;
-        font-weight: bold;
-      }
-
-      .total strong {
-        color: #c99a2f;
-      }
-
-      .btn {
-        display: block;
-        text-align: center;
-        margin-top: 30px;
-        background: #161210;
-        color: #fff;
-        text-decoration: none;
-        padding: 20px;
-        border-radius: 16px;
-        font-size: 18px;
-        font-weight: 600;
-        transition: 0.3s;
-      }
-
-      .btn:hover {
-        background: #c99a2f;
-      }
-
-      @media (max-width: 992px) {
-        .booking-wrapper {
-          grid-template-columns: 1fr;
-        }
-
-        .booking-card {
-          grid-template-columns: 1fr;
-        }
-
-        .heading h1 {
-          font-size: 40px;
-        }
-
-        .reservation {
-          padding: 25px;
-        }
-      }
-    </style>
 
     <script src="/_aistudio-iframe.js?v=2c34bde1"></script>
   </head>
@@ -660,97 +471,176 @@
       </section>
 
       <!-- 5. BOOKING CALENDAR SECTION (7-COL INTERACTIVE CSS GRID) -->
-      <section class="reservation">
-        <!-- <div class="heading">
-          <span>ប្រព័ន្ធកក់កន្លែងស្នាក់នៅ</span>
-          <h1>កក់បន្ទប់ និងជ្រើសរើសព័ត៌មាន</h1>
-          <p>
-            ជ្រើសរើសថ្ងៃចូលស្នាក់នៅ ប្រភេទបន្ទប់ និងចំនួនភ្ញៀវ
-            សម្រាប់ការស្នាក់នៅរបស់អ្នក។
-          </p>
-        </div> -->
-        <div class="section-header">
-          <span class="badge-sub" id="accomm-sub"
-            >ប្រព័ន្ធកក់កន្លែងស្នាក់នៅ</span
-          >
-          <h2 class="section-title" id="accomm-title">
-            កក់បន្ទប់ និងជ្រើសរើសព័ត៌មាន
-          </h2>
-          <p class="section-desc" id="accomm-desc">
-            ជ្រើសរើសថ្ងៃចូលស្នាក់នៅ ប្រភេទបន្ទប់ និងចំនួនភ្ញៀវ
-            សម្រាប់ការស្នាក់នៅរបស់អ្នក។
-          </p>
-        </div>
-
-        <div class="booking-wrapper">
-          <!-- Left Area -->
-          <div class="booking-content">
-            <div class="booking-header">
-              <h2>ព័ត៌មានការកក់</h2>
-
-              <div class="steps">
-                <button>‹ មុន</button>
-                <button>បន្ទាប់ ›</button>
-              </div>
-            </div>
-
-            <div class="booking-card">
-              <div class="box">
-                <label>ថ្ងៃចូលស្នាក់នៅ</label>
-                <input type="date" />
-              </div>
-
-              <div class="box">
-                <label>ថ្ងៃចាកចេញ</label>
-                <input type="date" />
-              </div>
-
-              <div class="box">
-                <label>ចំនួនភ្ញៀវ</label>
-                <select>
-                  <option>2 នាក់</option>
-                  <option>3 នាក់</option>
-                  <option>4 នាក់</option>
-                </select>
-              </div>
-
-              <div class="box">
-                <label>ប្រភេទបន្ទប់</label>
-                <select>
-                  <option>Suite Room</option>
-                  <option>Deluxe Room</option>
-                  <option>Family Room</option>
-                </select>
-              </div>
-            </div>
+      <section
+        id="booking"
+        class="section-py"
+        style="background-color: var(--color-bg-subtle)"
+      >
+        <div class="container">
+          <div class="section-header">
+            <span class="badge-sub" id="cal-sub"
+              >ប្រព័ន្ធប្រតិទិនកក់បន្ទប់អន្តរកម្ម</span
+            >
+            <h2 class="section-title" id="cal-title">
+              កក់បន្ទប់ និងពិនិត្យតម្លៃផ្ទាល់
+            </h2>
+            <p class="section-desc" id="cal-desc">
+              ជ្រើសរើសកាលបរិច្ឆេទស្នាក់នៅ ចំនួនភ្ញៀវ និងប្រភេទវីឡា
+              ដើម្បីទទួលបានតម្លៃពិសេស និងកញ្ចប់អត្ថប្រយោជន៍ល្អបំផុត។
+            </p>
           </div>
 
-          <!-- Right Area -->
-          <div class="summary">
-            <div class="summary-box">
-              <span class="small-title">ព័ត៌មានកក់</span>
-
-              <h3>Azure Overwater Sanctuary</h3>
-
-              <p>បន្ទប់សម្រាប់ការស្នាក់នៅប្រណិត</p>
-
-              <hr />
-
-              <div class="row">
-                <span>បន្ទប់ (3 យប់)</span>
-                <strong>$4,350</strong>
+          <!-- CSS Grid Calendar + Sidebar Container -->
+          <div class="calendar-container-grid">
+            <!-- Calendar Main Body -->
+            <div class="calendar-main">
+              <!-- Cal Header -->
+              <div class="cal-header-row">
+                <span class="cal-month-title" id="cal-display-month"
+                  >ខែតុលា ឆ្នាំ២០២៦</span
+                >
+                <div style="display: flex; gap: 8px">
+                  <button
+                    onclick="changeMonth(-1)"
+                    class="btn btn-outline btn-sm"
+                  >
+                    ‹ ខែមុន
+                  </button>
+                  <button
+                    onclick="changeMonth(1)"
+                    class="btn btn-outline btn-sm"
+                  >
+                    ខែបន្ទាប់ ›
+                  </button>
+                </div>
               </div>
 
-              <div class="row">
-                <span>សេវាកម្ម (3 យប់)</span>
-                <strong>$1,200</strong>
+              <!-- 7-Column Day Names -->
+              <div class="calendar-grid-7" id="calendar-days-container">
+                <!-- Dynamically populated by JavaScript -->
               </div>
 
-              <div class="total">
-                <span>សរុប</span>
-                <strong>$5,550</strong>
+              <!-- Counters: Adults, Children, Rooms -->
+              <div class="guest-counter-grid">
+                <div class="counter-card">
+                  <span class="counter-label" id="lbl-adults"
+                    >មនុស្សពេញវ័យ (Adults)</span
+                  >
+                  <div class="counter-box">
+                    <button
+                      onclick="adjustCounter('adults', -1)"
+                      class="counter-btn"
+                    >
+                      −
+                    </button>
+                    <strong id="val-adults">2 នាក់</strong>
+                    <button
+                      onclick="adjustCounter('adults', 1)"
+                      class="counter-btn"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+                <div class="counter-card">
+                  <span class="counter-label" id="lbl-children"
+                    >កុមារ (Children)</span
+                  >
+                  <div class="counter-box">
+                    <button
+                      onclick="adjustCounter('children', -1)"
+                      class="counter-btn"
+                    >
+                      −
+                    </button>
+                    <strong id="val-children">0 នាក់</strong>
+                    <button
+                      onclick="adjustCounter('children', 1)"
+                      class="counter-btn"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+                <div class="counter-card">
+                  <span class="counter-label" id="lbl-suites"
+                    >ចំនួនបន្ទប់ (Suites)</span
+                  >
+                  <div class="counter-box">
+                    <button
+                      onclick="adjustCounter('rooms', -1)"
+                      class="counter-btn"
+                    >
+                      −
+                    </button>
+                    <strong id="val-rooms">1 ខ្នង</strong>
+                    <button
+                      onclick="adjustCounter('rooms', 1)"
+                      class="counter-btn"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
+
+            <!-- Booking Summary Sidebar -->
+            <aside class="booking-sidebar">
+              <div class="sidebar-header">
+                <span class="badge-sub" id="lbl-summary-badge"
+                  >សង្ខេបការកក់</span
+                >
+                <h3 class="sidebar-title" id="summary-room-title">
+                  Azure Overwater Sanctuary
+                </h3>
+                <p
+                  style="
+                    font-size: 12px;
+                    color: var(--color-text-muted);
+                    margin-top: 4px;
+                  "
+                  id="summary-dates-text"
+                >
+                  ជ្រើសរើសកាលបរិច្ឆេទនៅលើប្រតិទិន
+                </p>
+              </div>
+
+              <div class="summary-list">
+                <div class="summary-item">
+                  <span id="lbl-room-subtotal"
+                    >ថ្លៃបន្ទប់ (<span id="summary-nights-count">3</span>
+                    យប់)</span
+                  >
+                  <strong id="summary-subtotal-val">$4,350</strong>
+                </div>
+                <div class="summary-item">
+                  <span id="lbl-tax">ថ្លៃសេវា & ពន្ធរមណីយដ្ឋាន (12%)</span>
+                  <strong id="summary-tax-val">$522</strong>
+                </div>
+                <div
+                  class="summary-item"
+                  id="summary-discount-row"
+                  style="color: var(--color-success); display: none"
+                >
+                  <span>បញ្ចុះតម្លៃពិសេស (SUNSET15)</span>
+                  <strong id="summary-discount-val">-$652</strong>
+                </div>
+                <div class="summary-item total">
+                  <span id="lbl-total-est">តម្លៃសរុបប៉ាន់ស្មាន</span>
+                  <strong id="summary-total-val">$4,872</strong>
+                </div>
+              </div>
+
+              <button
+                onclick="openBookingModal('azure-overwater')"
+                class="btn btn-primary"
+                style="width: 100%; padding: 14px; font-size: 14px"
+                id="btn-proceed-booking"
+              >
+                បន្តទៅការបំពេញព័ត៌មានភ្ញៀវ →
+              </button>
+            </aside>
           </div>
         </div>
       </section>
